@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.Card
 import androidx.compose.material.Divider
 import androidx.compose.material.OutlinedTextField
 import androidx.compose.material.Text
@@ -20,6 +21,8 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.google.accompanist.swiperefresh.SwipeRefresh
 import com.google.accompanist.swiperefresh.rememberSwipeRefreshState
+import com.hemanth.stockmarket.presentation.companuInfo.CompanyInfoScreen
+import com.hemanth.stockmarket.presentation.destinations.CompanyInfoScreenDestination
 import com.ramcosta.composedestinations.DestinationsNavHost
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
@@ -76,9 +79,12 @@ fun CompanyListingsScreen(
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-
+                                navigator.navigate(
+                                    CompanyInfoScreenDestination()
+                                )
                             }
                             .padding(16.dp)
+
                     )
                     if (index < state.companies.count()) {
                         Divider(
