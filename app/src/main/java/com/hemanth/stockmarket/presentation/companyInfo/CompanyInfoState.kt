@@ -1,4 +1,4 @@
-package com.hemanth.stockmarket.presentation.companuInfo
+package com.hemanth.stockmarket.presentation.companyInfo
 
 import com.hemanth.stockmarket.domain.model.CompanyInfo
 import com.hemanth.stockmarket.domain.model.IntradayInfo

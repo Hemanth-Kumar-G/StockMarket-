@@ -1,4 +1,4 @@
-package com.hemanth.stockmarket.presentation.companuInfo
+package com.hemanth.stockmarket.presentation.companyInfo
 
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.getValue
